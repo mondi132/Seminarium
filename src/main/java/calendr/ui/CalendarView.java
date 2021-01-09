@@ -68,7 +68,7 @@ public class CalendarView extends Container implements MouseListener, KeyListene
         c.gridy = 0;
         add(b2, c);
 
-        String[] columns = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+        String[] columns = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
         model = new DefaultTableModel(null, columns);
         model.setRowCount(6);
         table = new JTable(model);
@@ -118,7 +118,7 @@ public class CalendarView extends Container implements MouseListener, KeyListene
         model.setRowCount(0);
         model.setRowCount(weeks);
 
-        int i = startDay - 1;
+        int i = startDay - 2;
         for (int day = 1; day <= numberOfDays; day++) {
             if (LocalDate.now().getDayOfMonth() == day && setDate) table.changeSelection(i / 7, i % 7, false, false);
             model.setValueAt(day, i / 7, i % 7);
