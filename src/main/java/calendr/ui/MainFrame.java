@@ -44,7 +44,7 @@ public class MainFrame extends JFrame implements MainViewContract, ActionListene
 
 	public MainFrame() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setTitle("Calendr");
+		this.setTitle("Calendar");
 		this.setSize(500, 500);
 		this.setLayout(new BorderLayout());
 		this.setVisible(true);
